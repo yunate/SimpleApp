@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{D7C7B9CB-E008-4491-B4BA-7CA42D8498D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{22012717-D6FD-40EB-A7B7-0391B064D326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{CD59AD36-38B8-4E8C-8596-B980241464AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\export">
+      <UniqueIdentifier>{1034d401-9fcd-48c5-847d-5c8958f3fbbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\export\g_path.h">
+      <Filter>src\export</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\g_path.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
