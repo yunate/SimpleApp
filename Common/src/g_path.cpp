@@ -55,7 +55,7 @@ ddstr g_path::get_host_dll_path()
 ddstr g_path::get_res_base_path()
 {
 #ifdef _DEBUG
-    return _DDT("../../HostDll/res/");
+    return _DDT("../../HostDll/res/uires/");
 #endif // _DEBUG
 
     return ddstr();

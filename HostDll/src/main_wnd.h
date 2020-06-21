@@ -74,16 +74,16 @@ protected:
         EVENT_NAME_COMMAND(L"btn_max", OnMaximize)
         EVENT_NAME_COMMAND(L"btn_restore", OnRestore)
         EVENT_NAME_COMMAND(L"btn_msgbox", OnBtnMsgBox)
-        EVENT_MAP_END()
+    EVENT_MAP_END()
 
         //窗口消息处理映射表
-        BEGIN_MSG_MAP_EX(CMainWnd)
+    BEGIN_MSG_MAP_EX(CMainWnd)
         MSG_WM_INITDIALOG(OnInitDialog)
         MSG_WM_CLOSE(OnClose)
         MSG_WM_SIZE(OnSize)
         CHAIN_MSG_MAP(SHostWnd)//注意将没有处理的消息交给基类处理
         REFLECT_NOTIFICATIONS_EX()
-        END_MSG_MAP()
+    END_MSG_MAP()
 private:
     BOOL            m_bLayoutInited;
 };

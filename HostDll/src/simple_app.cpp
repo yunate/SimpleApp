@@ -58,7 +58,7 @@ bool load_resource(sp_app spApp, HINSTANCE hInstance)
     // //SOUI系统总是从appdir去查找资源
     // spApp->SetAppDir(strResDir);
 #endif
-    ddstr resBasePath = g_path::get_res_base_path() + _DDT("uires/");
+    ddstr resBasePath = g_path::get_res_base_path();
 
     //加载系统资源
     HMODULE hSysResource = ::LoadLibrary((resBasePath + SYS_NAMED_RESOURCE).c_str());
@@ -113,7 +113,6 @@ int simple_app::run_wnd(HINSTANCE hInstance)
     if (!load_resource(spApp, hInstance)) {
         return -1;
     }
-
 
     {
         CMainWnd wndMain;
